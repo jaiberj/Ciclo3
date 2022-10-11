@@ -11,7 +11,7 @@
 	<groupId>com.jaiberuribe</groupId>
 	<artifactId>Ciclo3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Ciclo3</name>
+	<name>ciclo3</name>
 	<description>Proyecto para ciclo 3 de Jaiber Uribe</description>
 	<properties>
 		<java.version>11</java.version>
