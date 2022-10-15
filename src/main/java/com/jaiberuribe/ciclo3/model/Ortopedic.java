@@ -25,6 +25,7 @@ public class Ortopedic {
      private Integer year;
      private String description;
 
+     /* tables relationships*/
     @ManyToOne
     @JoinColumn(name = "categoryId")
     @JsonIgnoreProperties("ortopedics")
@@ -39,6 +40,7 @@ public class Ortopedic {
     @JsonIgnoreProperties({"ortopedic","messages"})
     public List<Reservation> reservations;
 
+    /*getter and setter*/
     public Integer getId() {
         return id;
     }

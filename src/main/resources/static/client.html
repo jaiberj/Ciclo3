@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href=css/ciclo3.css/>
+    <script type="text/javascript" src="js/client.js"></script>
+    <title>Ortesis</title>
+    <base haref="/"/>
+</head>
+<body>
+<div class="cabecera">
+    Proyecto Ciclo 3 MisionTIC 2022
+</div>
+<menu>
+    <ul>
+        <li>
+            <a href="index.html">Inicio</a>
+        </li>
+        <li>
+            <a href="ortopedic.html">Ortopedic</a>
+        </li>
+        <li>
+            <a href="client.html">Clientes</a>
+        </li>
+        <li>
+            <a href="message.html">Mensajes</a>
+        </li>
+        <li>
+            <a href="category.html">Categorias</a>
+        </li>
+        <li>
+            <a href="reservation.html">Reservaciones</a>
+        </li>
+    </ul>
+</menu>
+<div class="container content">
+    <h1>Clientes</h1>
+    <div class="row">
+        <span class="span" onclick="open(-1);">Nuevo Cliente</span>
+    </div></div>
+<div class="row data_grid">
+    <div class="col">
+        <table id="tblClient" class="table">
+            <thead>
+            <td>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Edad</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div></div>
+
+<button onclick="open(-1);" id="modal">Agregar</button>
+<div id="modalCliente" class="modal">
+    <div class="modal_content">
+    <h3>Nuevo Cliente</h3>
+    <input type="hidden" id="txtId" value=""/>
+    <label>Nombre:</label><input type="text" id="txtName" value=""/><br/>
+    <label>Email:</label><input type="email" id="txtEmail" value=""/><br/>
+    <label>Password:</label><input type="text" id="txtPassword" value=""/><br/>
+    <label>Edad:</label><input type="number" id="txtAge" value=""/><br/>
+    <button id="addMod">Agregar</button>
+    <button id="actMod">Actaulizar</button>
+    <button id="canMod">Cancelar</button>
+    </div>
+</div>
+<br><br>
+<button id="guardar">Guardar</button>
+<button onclick="ActualizarClientes();">Actualizar</button>
+<button onclick="location.href='index.html'">Volver</button>
+</body>
+</html>
